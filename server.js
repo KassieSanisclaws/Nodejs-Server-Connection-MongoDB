@@ -29,7 +29,7 @@ serverApp.use((req, res, next) => {
 
 // Server Hosted: 
 serverApp.get('/', (req, res) => {
-    res.json({ message: 'Welcome to the Nodejs MongoDb Server Example' });
+    res.send('Welcome to the Nodejs MongoDb Server Example');
 });
 
 // Server Error:
@@ -39,7 +39,7 @@ serverApp.use((err, req, res, next) => {
 
 // Server Success:
 const port = process.env.SERVER_PORT;
-serverApp.listen(process.env.PORT, () => {
+serverApp.listen(port, () => {
     console.log(`Server is running on port http://localhost:${port}`);
 });
 

@@ -10,6 +10,22 @@ const userSchema = mongodbConnect.Schema({
         required: true,
         unique: true
     },
+    displayName: {
+        type: String,
+        required: true
+    },
+    displayRoleType: {
+        type: String,
+        required: true
+    },
+    displayImage: {
+        type: String,
+        required: true
+    },
+    greeting: {
+        type: String,
+        required: true
+    },
     password: {
         type: String,
         required: true
