@@ -1,4 +1,6 @@
-const bcrypt = require('bcryptjs');
+const bcrypt = require('bcrypt');
+const img1 = ("./images/anime-pic.png");
+const img2 = ("./images/anime-pic3.png");
 
 const data = {
     users: [
@@ -7,9 +9,9 @@ const data = {
             email: "adminTest@gmail.com",
             displayName:"Kassie",
             displayRoleType: "Admin",
-            displayImage: "",
+            displayImage: img1,
             greeting: "Welcome I am Kassie Your Admin!",
-            password: bcrypt.hashSync('', 10),
+            password: bcrypt.hashSync('djyeTesting123', 10),
             isAdmin: true,
         },
         {
@@ -17,9 +19,9 @@ const data = {
             email: "adminTest2@gmail.com",
             displayName:"Karla",
             displayRoleType: "Admin",
-            displayImage: "",
+            displayImage: img2,
             greeting: "Welcome I am Karla Your Admin!",
-            password: bcrypt.hashSync('', 10),
+            password: bcrypt.hashSync('KKTesting1234', 10),
             isAdmin: true
         },
         {

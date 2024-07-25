@@ -12,14 +12,6 @@ const generateToken = (user) => {
    }, process.env.JWT_SECRET, { expiresIn: "24hrs" });
 };
 
-const verifyToken = (token) => {
-  try {
-    return jwt.verify(token, process.env.JWT_SECRET);
-  } catch (err) {
-    return console.log(err.message);
-  }
-};
-
 const isAuthorized = (req, res, next) => {
   const authorization = req.headers.authorization;
   if(authorization){
@@ -49,7 +41,6 @@ const isAdmin = (req, res, next) => {
 
 module.exports = { 
   generateToken, 
-  verifyToken,
   isAuthorized,
   isAdmin 
 };
