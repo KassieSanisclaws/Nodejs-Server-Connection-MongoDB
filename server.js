@@ -3,6 +3,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 const userRouter = require('./Routes/userRoute');
+const productRouter = require('./Routes/productRoute');
 
 // Load environment variables from .env file
 dotenv.config();
@@ -26,7 +27,8 @@ serverApp.use((req, res, next) => {
 });
 
 // Routes:
-serverApp.use("api/users", userRouter); 
+serverApp.use("/api/users", userRouter);
+serverApp.use("/api/products", productRouter);
 
 // Server Hosted: 
 serverApp.get('/', (req, res) => {

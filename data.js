@@ -1,129 +1,130 @@
 const bcrypt = require('bcrypt');
-const img1 = ("./images/anime-pic.png");
-const img2 = ("./images/anime-pic3.png");
+const img3 = ("./images/author-mangaPic5.png");
+const img4 = ("./images/gojo-pic2.png");
+const img5 = ("./images/SonicPictures.png");
 
 const data = {
-    users: [
-        {
-            name: "Kassie",
-            email: "adminTest@gmail.com",
-            displayName:"Kassie",
-            displayRoleType: "Admin",
-            displayImage: img1,
-            greeting: "Welcome I am Kassie Your Admin!",
-            password: bcrypt.hashSync('djyeTesting123', 10),
-            isAdmin: true,
-        },
-        {
-            name: "Karla",
-            email: "adminTest2@gmail.com",
-            displayName:"Karla",
-            displayRoleType: "Admin",
-            displayImage: img2,
-            greeting: "Welcome I am Karla Your Admin!",
-            password: bcrypt.hashSync('KKTesting1234', 10),
-            isAdmin: true
-        },
-        {
-            name: "Tommy",
-            email: "tommyTest@gmail.com",
-            displayName:"Tommy",
-            displayRoleType: "User",
-            displayImage: "",
-            greeting: "Welcome I am Tommy!",
-            password: bcrypt.hashSync('testing123', 10),
-            isAdmin: false
-        },
-        {
-            name: "Sally",
-            email: "sallyTest@gmail.com",
-            displayName:"Sally",
-            displayRoleType: "User",
-            displayImage: "",
-            greeting: "Welcome I am Sally!",
-            password: bcrypt.hashSync('testing1234', 10),
-            isAdmin: false
-        },
-        {
-            name: "Billy",
-            email: "billy@gmail.com",
-            displayName:"Billy",
-            displayRoleType: "User",
-            displayImage: "",
-            greeting: "Welcome I am Billy!",
-            password: bcrypt.hashSync('testing12345', 10),
-            isAdmin: false
-        }
-    ],
+  users: [
+    {
+      name: "Kassie",
+      email: "adminTest@gmail.com",
+      displayName: "Kassie",
+      displayRoleType: "Admin",
+      displayImage: "./images/anime-pic3.png",
+      greeting: "Welcome I am Kassie Your Admin!",
+      password: bcrypt.hashSync("djyeTesting123", 10),
+      isAdmin: true,
+    },
+    {
+      name: "Karla",
+      email: "adminTest2@gmail.com",
+      displayName: "Karla",
+      displayRoleType: "Admin",
+      displayImage: "./images/anime-pic.png",
+      greeting: "Welcome I am Karla Your Admin!",
+      password: bcrypt.hashSync("KKTesting1234", 10),
+      isAdmin: true,
+    },
+    {
+      name: "Tommy",
+      email: "tommyTest@gmail.com",
+      displayName: "Tommy",
+      displayRoleType: "User",
+      displayImage: img5,
+      greeting: "Welcome I am Tommy!",
+      password: bcrypt.hashSync("testing123", 10),
+      isAdmin: false,
+    },
+    {
+      name: "Sally",
+      email: "sallyTest@gmail.com",
+      displayName: "Sally",
+      displayRoleType: "User",
+      displayImage: img3,
+      greeting: "Welcome I am Sally!",
+      password: bcrypt.hashSync("testing1234", 10),
+      isAdmin: false,
+    },
+    {
+      name: "Billy",
+      email: "billy@gmail.com",
+      displayName: "Billy",
+      displayRoleType: "User",
+      displayImage: img4,
+      greeting: "Welcome I am Billy!",
+      password: bcrypt.hashSync("testing12345", 10),
+      isAdmin: false,
+    },
+  ],
 
-    products: [
-        {
-            name: 'Nike Slim Shirt',
-            category: 'Shirts',
-            image: '/images/p1.jpg',
-            price: 120,
-            countInStock: 10,
-            brand: 'Nike',
-            rating: 4.5,
-            numReviews: 10,
-            description: 'high quality product'
-        },
-        {
-            name: 'Adidas Fit Shirt',
-            category: 'Shirts',
-            image: '/images/p2.jpg',
-            price: 100,
-            countInStock: 20,
-            brand: 'Adidas',
-            rating: 4.0,
-            numReviews: 10,
-            description: 'high quality product'
-        },
-        {
-            name: 'Lacoste Free Shirt',
-            category: 'Shirts',
-            image: '/images/p3.jpg',
-            price: 220,
-            countInStock: 0,
-            brand: 'Lacoste',
-            rating: 4.8,
-            numReviews: 17,
-            description: 'high quality product'
-        },
-        {
-            name: 'Nike Slim Pants',
-            category: 'Pants',
-            image: '/images/p4.jpg',
-            price: 78,
-            countInStock: 15,
-            brand: 'Nike',
-            rating: 4.5,
-            numReviews: 14,
-            description: 'high quality product'
-        },
-        {
-            name: 'Puma Slim Pants',
-            category: 'Pants',
-            image: '/images/p5.jpg',
-            price: 65,
-            countInStock: 5,
-            brand: 'Puma',
-            rating: 4.5,
-            numReviews: 10,
-            description: 'high quality product'
-        },
-        {
-            name: 'Adidas Fit Pants',
-            category: 'Pants',
-            image: '/images/p6.jpg',
-            price: 139,
-            countInStock: 12,
-            brand: 'Adidas',
-            rating: 4.5,
-            numReviews: 15,
-            description: 'high quality product'
-        }
-    ]
+  products: [
+    {
+      name: "Wing Zero Gundam EndlessWaltz",
+      category: "Custom Gundam",
+      image: "./images/products/WingZeroGundam.png",
+      price: 320,
+      countInStock: 10,
+      brand: "Bandai",
+      rating: 4.5,
+      numReviews: 10,
+      description: "high quality Gundam model kit",
+    },
+    {
+      name: "Justice Gundam",
+      category: "Custom Gundam",
+      image: "./images/products/JusticeGundam.png",
+      price: 200,
+      countInStock: 20,
+      brand: "Bandai",
+      rating: 4.0,
+      numReviews: 10,
+      description: "high quality Gundam model kit",
+    },
+    {
+      name: "StrikeFreedom Gundam",
+      category: "Custom Gundam",
+      image: "./images/products/StrikeFreedomGundam.png",
+      price: 420,
+      countInStock: 0,
+      brand: "Bandai",
+      rating: 4.8,
+      numReviews: 17,
+      description: "high quality Gundam model kit",
+    },
+    {
+      name: "Strike Rouge Gundam",
+      category: "Plastic Model Kit",
+      image: "./images/products/StrikeRougueGundam.png",
+      price: 98,
+      countInStock: 15,
+      brand: "Sunrise",
+      rating: 4.5,
+      numReviews: 14,
+      description: "high quality Gundam model kit plastic",
+    },
+    {
+      name: "Buster Gundam",
+      category: "Plastic Model Kit",
+      image: "./images/products/BusterGundam.png",
+      price: 165,
+      countInStock: 5,
+      brand: "Sunrise",
+      rating: 4.5,
+      numReviews: 10,
+      description: "high quality Gundam model kit plastic",
+    },
+    {
+      name: "Destiny Gundam",
+      category: "Custom Gundam",
+      image: "./images/products/DestinyGundam.png",
+      price: 339,
+      countInStock: 12,
+      brand: "Bandai",
+      rating: 4.5,
+      numReviews: 15,
+      description: "high quality Gundam model kit",
+    },
+  ],
 };
 
 module.exports = data;
