@@ -4,10 +4,10 @@ const { CreateAllProduts, GetAllProducts, GetProductByID, AdminCreateNewProduct,
 
 const productRouter = express.Router();
 
-productRouter.post("/seed", CreateAllProduts);
+productRouter.get("/seed", CreateAllProduts);
 productRouter.get("/allProducts", GetAllProducts);
-productRouter.get("/:id", GetProductByID);
-productRouter.post("/", isAuthorized, isAdmin, AdminCreateNewProduct);
+// productRouter.get("/:id", GetProductByID);
+// productRouter.post("/", isAuthorized, isAdmin, AdminCreateNewProduct);
 productRouter.put("/:id", isAuthorized, isAdmin, UpdateProductByID);
 productRouter.delete("/:id", isAuthorized, isAdmin, DeleteProductByID);
 

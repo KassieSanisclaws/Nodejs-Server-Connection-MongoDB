@@ -6,7 +6,7 @@ const data = require("../data");
 const CreateAllUsers = async (req, res) => {
   try {
     const createdUsers = await User.insertMany(data.users);
-    res.status(201).send({ createdUsers });
+    res.status(201).send({ createdUsers }); 
   } catch (err) {
     res.status(500).send({ message: err.message });
   }

@@ -6,8 +6,8 @@ const img5 = ("./images/SonicPictures.png");
 const data = {
   users: [
     {
-      name: "Kassie",
-      email: "adminTest@gmail.com",
+      name: "Kadeem",
+      email: "adminTest5@gmail.com",
       displayName: "Kassie",
       displayRoleType: "Admin",
       displayImage: "./images/anime-pic3.png",
@@ -17,7 +17,7 @@ const data = {
     },
     {
       name: "Karla",
-      email: "adminTest2@gmail.com",
+      email: "admin@gmail.com",
       displayName: "Karla",
       displayRoleType: "Admin",
       displayImage: "./images/anime-pic.png",
@@ -27,7 +27,7 @@ const data = {
     },
     {
       name: "Tommy",
-      email: "tommyTest@gmail.com",
+      email: "tommy@gmail.com",
       displayName: "Tommy",
       displayRoleType: "User",
       displayImage: img5,
@@ -37,7 +37,7 @@ const data = {
     },
     {
       name: "Sally",
-      email: "sallyTest@gmail.com",
+      email: "sally@gmail.com",
       displayName: "Sally",
       displayRoleType: "User",
       displayImage: img3,
@@ -47,7 +47,7 @@ const data = {
     },
     {
       name: "Billy",
-      email: "billy@gmail.com",
+      email: "billyTest@gmail.com",
       displayName: "Billy",
       displayRoleType: "User",
       displayImage: img4,
